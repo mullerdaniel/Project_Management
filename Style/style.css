@@ -1,0 +1,204 @@
+:root {
+    --cor-primaria: #5828E3; /* ROXO */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TEXTO + SUBTEXTO + LINHA VERTICAL*/
+.highlight-wrapper {
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .highlight-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0.75rem;
+    width: 9px;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      var(--cor-primaria) 0px,
+      var(--cor-primaria) 145px,  
+      #f5f3ff 60px,
+      #f5f3ff 100%
+    );
+    z-index: 0;
+  }
+  
+  .feature {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    z-index: 1;
+  }
+  
+  .feature h2 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem;
+  }
+  
+  .feature p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .feature a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  .feature a span {
+    display: inline-block;
+    margin-left: 4px;
+    transition: transform 0.2s ease;
+  }
+  
+  .feature a:hover span {
+    transform: translateX(2px);
+  }
+
+
+/* Cartões de preço estilo pricing */
+.planos-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 24px 48px;
+    background: #ffffff;
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+    color: #1f2d3a;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .cartao-plano {
+    position: relative;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .popular .selo-popular {
+    position: absolute;
+    top: -6px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1f2d3a;
+  }
+  .popular .selo-popular svg {
+    width: 16px;
+    height: 16px;
+    transform: rotate(-20deg);
+  }
+  
+  .bloco-preco {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .preco {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin: 0;
+  }
+  .valor {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .periodo {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .nome-plano {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .faturamento {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 2px 0 0;
+  }
+  
+  .lista-recursos {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .lista-recursos li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .check {
+    flex-shrink: 0;
+    margin-top: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+  }
+  .check svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+    stroke: #22c55e;
+    stroke-width: 3;
+    fill: none;
+  }
+  .texto-recurso {
+    flex: 1;
+  }
+  
+  .botao-comece {
+    margin-top: 8px;
+    padding: 14px 0;
+    background: #5828E3;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+  .botao-comece:focus-visible {
+    outline: 3px solid rgba(88,40,227,0.5);
+    outline-offset: 2px;
+  }
+  
