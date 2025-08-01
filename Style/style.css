@@ -346,7 +346,7 @@
 }
 
 .texto-rodape {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 25px;
   line-height: 1.4;
@@ -355,26 +355,24 @@
 .contato-rodape {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px; 
 }
 
 .contato-item {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  align-items: center; 
 }
 
 .contato-item img {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
+  width: 40px;  
+  height: 40px; 
+  margin-right: 15px; 
 }
 
 .contato-item p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: #d1d5db;
+  font-size: 16px; 
 }
+
 
 .rodape-centro {
   flex: 0;
@@ -420,7 +418,7 @@
 }
 
 .links-rodape a {
-  color: #d1d5db;
+  color: #ffffff;
   text-decoration: none;
   font-size: 0.95rem;
   transition: color 0.2s ease;
@@ -436,8 +434,8 @@
 }
 
 .redes-sociais a img {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   transition: opacity 0.2s ease;
 }
 
@@ -448,22 +446,47 @@
 .linha-rodape {
   width: 100%;
   height: 1px;
-  background-color: #6b7280;
+  background-color: #7E8492;
   margin: 30px 0 20px;
 }
 
 .rodape-inferior {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   font-size: 0.85rem;
   color: #9ca3af;
+  
 }
 
-.termos-rodape,
-.copyright-rodape {
-  margin: 0;
+.termos-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  width: 100%;
+  max-width: 500px; 
+  gap: 20px;
 }
+
+.termos-rodape {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.termos-rodape:hover {
+  color: #f3f4f6;
+  text-decoration: underline;
+}
+
+.copyright-rodape {
+  text-align: left;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: 30px;
+  font-family: 'Arial', sans-serif;
+}
+
 
 /* Responsivo para mobile */
 @media (max-width: 768px) {
@@ -485,9 +508,4 @@
     text-align: left;
   }
 
-  .rodape-inferior {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
 }
