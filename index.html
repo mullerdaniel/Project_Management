@@ -148,7 +148,7 @@
         </a>
     </div>
 
-    <div class="imagem-task-progress">
+    <div id="imagem-task-progress">
         <img src="/imagens/task-progress.png" alt="Imagem taks progress">
     </div>
 
@@ -171,51 +171,376 @@
     <!-- PREÇOS COM BOTÕES -->
     <div class="planos-wrapper">
         <div class="cartao-plano popular">
-          <div class="selo-popular">
-            <span>Most popular!</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M2 12h20M14 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <div class="bloco-preco">
-            <div class="preco">
-              <span class="valor">$10</span><span class="periodo">/mth</span>
+            <div class="bloco-preco">
+                <div class="preco">
+                    <span class="valor">$10</span><span class="periodo">/mth</span>
+                </div>
+                <p class="nome-plano">Basic plan</p>
+                <p class="faturamento">Billed annually.</p>
             </div>
-            <p class="nome-plano">Basic plan</p>
-            <p class="faturamento">Billed annually.</p>
-          </div>
-          <ul class="lista-recursos">
-            <li><div class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 13 10 18 19 7"></polyline></svg></div><div class="texto-recurso">Access to all basic features</div></li>
-            <li><div class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 13 10 18 19 7"></polyline></svg></div><div class="texto-recurso">Basic reporting and analytics</div></li>
-            <li><div class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 13 10 18 19 7"></polyline></svg></div><div class="texto-recurso">Up to 10 individual users</div></li>
-            <li><div class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 13 10 18 19 7"></polyline></svg></div><div class="texto-recurso">20GB individual data each user</div></li>
-            <li><div class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 13 10 18 19 7"></polyline></svg></div><div class="texto-recurso">Basic chat and email support</div></li>
-          </ul>
-          <button class="botao-comece">Get started</button>
+            <ul class="lista-recursos">
+                <li>
+                    <div class="check">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="texto-recurso">Access to all basic features</div>
+                </li>
+                <li>
+                    <div class="check">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="texto-recurso">Basic reporting and analytics</div>
+                </li>
+                <li>
+                    <div class="check">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="texto-recurso">Up to 10 individual users</div>
+                </li>
+                <li>
+                    <div class="check">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="texto-recurso">20GB individual data each user</div>
+                </li>
+                <li>
+                    <div class="check">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="texto-recurso">Basic chat and email support</div>
+                </li>
+            </ul>
+            <button class="botao-comece">Get started</button>
         </div>
-      
-        <div class="cartao-plano">
-          <div class="bloco-preco">
-            <div class="preco">
-              <span class="valor">$20</span><span class="periodo">/mth</span>
-            </div>
-            <p class="nome-plano">Business plan</p>
-            <p class="faturamento">Billed annually.</p>
-          </div>
-          <ul class="lista-recursos">
-            <li><div class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 13 10 18 19 7"></polyline></svg></div><div class="texto-recurso">200+ integrations</div></li>
-            <li><div class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 13 10 18 19 7"></polyline></svg></div><div class="texto-recurso">Advanced reporting</div></li>
-            <li><div class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 13 10 18 19 7"></polyline></svg></div><div class="texto-recurso">Up to 20 individual users</div></li>
-            <li><div class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 13 10 18 19 7"></polyline></svg></div><div class="texto-recurso">40GB individual data each user</div></li>
-            <li><div class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 13 10 18 19 7"></polyline></svg></div><div class="texto-recurso">Priority chat and email support</div></li>
-          </ul>
-          <button class="botao-comece">Get started</button>
-        </div>
-      </div>
-      
-      
 
-    
+        <div class="cartao-plano">
+            <div class="bloco-preco">
+                <div class="preco">
+                    <span class="valor">$20</span><span class="periodo">/mth</span>
+                </div>
+                <p class="nome-plano">Business plan</p>
+                <p class="faturamento">Billed annually.</p>
+            </div>
+            <ul class="lista-recursos">
+                <li>
+                    <div class="check">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="texto-recurso">200+ integrations</div>
+                </li>
+                <li>
+                    <div class="check">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="texto-recurso">Advanced reporting</div>
+                </li>
+                <li>
+                    <div class="check">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="texto-recurso">Up to 20 individual users</div>
+                </li>
+                <li>
+                    <div class="check">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="texto-recurso">40GB individual data each user</div>
+                </li>
+                <li>
+                    <div class="check">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="texto-recurso">Priority chat and email support</div>
+                </li>
+            </ul>
+            <button class="botao-comece">Get started</button>
+        </div>
+    </div>
+
+
+    <!-- PARTE DO SITE COM COR DIFERENTE DE BACKGROUND + TEXTO + SUBTEXTO + INFORMATIVOS -->
+    <div class="container-fundo-roxo">
+        <div class="texto">
+            <h2>Streamline project management with the simplest tool available</h2>
+        </div>
+
+        <div class="subtexto">
+            <p>Why a straightforward project management tool is the best choice for your team</p>
+        </div>
+
+
+        <!-- Contêiner para centralizar o card -->
+        <div class="container-centralizado">
+            <!-- CARD-ROXO -->
+            <div class="card-roxo">
+                <div class="linha">
+                    <div>
+                        <div class="texto">
+                            <h1>400+</h1>
+                        </div>
+
+                        <div class="subtexto">
+                            <h3>Projects completed</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha separadora abaixo de "Projects completed" -->
+                <div class="linha">
+                    <hr />
+                </div>
+
+                <div class="linha">
+                    <div class="texto">
+                        <h1>600%</h1>
+                    </div>
+
+                    <div class="subtexto">
+                        <h3>Return on investment</h3>
+                    </div>
+                </div>
+
+                <!-- Linha separadora abaixo de "Return on investment" -->
+                <div class="linha">
+                    <hr />
+                </div>
+
+                <div class="texto">
+                    <h1>10K</h1>
+                </div>
+
+                <div class="subtexto">
+                    <h3>Global downloads</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- TEXTO DECORADO + TEXTO + SUBTEXTO + BOTÃO -->
+    <div class="texto-decoracao">
+        <h3>Our clients knows the value we provide</h3>
+    </div>
+
+    <div class="subtexto">
+        <p>We take great pride in the satisfaction of our clients, as evidenced by their glowing feedback about our
+            exceptional service.</p>
+    </div>
+
+    <div class="botao-View-More-Reviews">
+        <a href="">
+            <h3>View More Reviews</h3>
+        </a>
+    </div>
+
+
+    <!-- COMENTARIOS -->
+
+    <!--COMENTARIO 1-->
+    <div class="card-comentarios">
+        <div class="imagem-perfil">
+            <img src="/imagens/foto-perfil2.png" alt="Foto perfil 1">
+        </div>
+
+        <div class="nome-pessoa">
+            <h4>Jhonatan Albert</h4>
+        </div>
+
+        <div class="funcao">
+            <h4>Student</h4>
+        </div>
+
+        <div class="comentario">
+            <p>So far we are enjoy to stay in this house. Also amazing experience working together Coca Team. They are
+                very passionate. </p>
+        </div>
+
+        <div class="estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <h4>5.0</h4>
+        </div>
+    </div>
+
+    <!--COMENTARIO 2-->
+    <div class="card-comentarios">
+        <div class="imagem-perfil">
+            <img src="/imagens/foto-perfil3.png" alt="Foto perfil 2">
+        </div>
+
+        <div class="nome-pessoa">
+            <h4>Jhonatan Albert</h4>
+        </div>
+
+        <div class="funcao">
+            <h4>Student</h4>
+        </div>
+
+        <div class="comentario">
+            <p>So far we are enjoy to stay in this house. Also amazing experience working together Coca Team. They are
+                very passionate. </p>
+        </div>
+
+        <div class="estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <h4>5.0</h4>
+        </div>
+    </div>
+
+    <!--COMENTARIO 3-->
+    <div class="card-comentarios">
+        <div class="imagem-perfil">
+            <img src="/imagens/foto-perfil4.png" alt="Foto perfil 3">
+        </div>
+
+        <div class="nome-pessoa">
+            <h4>Jhonatan Albert</h4>
+        </div>
+
+        <div class="funcao">
+            <h4>Student</h4>
+        </div>
+
+        <div class="comentario">
+            <p>So far we are enjoy to stay in this house. Also amazing experience working together Coca Team. They are
+                very passionate. </p>
+        </div>
+
+        <div class="estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <h4>5.0</h4>
+        </div>
+    </div>
+
+    <!--COMENTARIO 4-->
+    <div class="card-comentarios">
+        <div class="imagem-perfil">
+            <img src="/imagens/foto-perfil5.png" alt="Foto perfil 4">
+        </div>
+
+        <div class="nome-pessoa">
+            <h4>Jhonatan Albert</h4>
+        </div>
+
+        <div class="funcao">
+            <h4>Student</h4>
+        </div>
+
+        <div class="comentario">
+            <p>So far we are enjoy to stay in this house. Also amazing experience working together Coca Team. They are
+                very passionate. </p>
+        </div>
+
+        <div class="estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <img src="/imagens/Icon-estrela.png" alt="Icone estrelas">
+            <h4>5.0</h4>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="rodape-mobile">
+        <div class="conteudo-rodape">
+            <div class="rodape-superior">
+                <div class="rodape-esquerda">
+                    <p class="texto-rodape">Let's join Coca Pay, We protect your money</p>
+                    <div class="contato-rodape">
+                        <div class="contato-item">
+                            <img src="/imagens/icon-localização.png" alt="Localização">
+                            <p>1929, Bancangan, Sambit, Suroboyo, Wakanda</p>
+                        </div>
+                        <div class="contato-item">
+                            <img src="/imagens/email.png" alt="Email">
+                            <p>hello@cocapay.co</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rodape-centro">
+                    <div class="logo-container">
+                        <img src="/imagens/C_footer.png" alt="Logo">
+                        <div class="logo-rodape">coca</div>
+                    </div>
+                </div>
+
+                <div class="rodape-direita">
+                    <div class="links-rodape">
+                        <a href="">Overview</a>
+                        <a href="">Pricing</a>
+                        <a href="">Help</a>
+                        <a href="">Features</a>
+                        <a href="">Careers</a>
+                    </div>
+                    <div class="redes-sociais">
+                        <a href=""><img src="/imagens/icon-facebook.png" alt="Facebook"></a>
+                        <a href=""><img src="/imagens/icon-twitter.png" alt="Twitter"></a>
+                        <a href=""><img src="/imagens/icon-instagram.png" alt="Instagram"></a>
+                        <a href=""><img src="/imagens/icon-in.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Linha de separação -->
+            <div class="linha-rodape"></div>
+
+            <div class="rodape-inferior">
+                <div class="termos-container">
+                    <span class="termos-rodape">Terms & Conditions</span>
+                    <span class="termos-rodape">Privacy Policy</span>
+                </div>
+                <p class="copyright-rodape">© Coca Pay by Sans Brothers</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
