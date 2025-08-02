@@ -1,3 +1,8 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
 :root {
   --cor-primaria: #5828E3;
   /* ROXO */
@@ -5,7 +10,210 @@
   /* ROXO CLARO */
   --cor-terciaria: #1D1E25;
   /* PRETO */
+  --cor-quarta: #7E8492;
+  /* ESCRITAS CINZAS */
 }
+
+
+/* VERSÃO MOBILE */
+
+@media (max-width: 768px) {
+
+
+  /* HEADER */
+  #header-desktop {
+    display: none;
+  }
+
+  #header-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: white;
+  }
+
+  .titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .titulo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .titulo h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    margin: 0;
+  }
+
+  .humburguer {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+  }
+
+  .humburguer img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .texto-decoracao {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: var(--cor-segundaria);
+    color: var(--cor-primaria);
+    border-radius: 10000px;
+    font-weight: 400;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(88, 40, 227, 0.05);
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .texto-decoracao {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+  }
+
+  .texto-decoracao h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bloco-titulo-centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centraliza na altura da tela */
+    text-align: center;
+  }
+
+  .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .texto h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .texto-roxo {
+    color: var(--cor-primaria);
+  }
+
+  .bloco-titulo-centralizado {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding: 40px 16px;
+  }
+
+  .blur-roxo {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 100px;
+    height: 80px;
+    background: var(--cor-primaria);
+    opacity: 0.25;
+    filter: blur(60px);
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .subtexto p {
+    color: var(--cor-quarta);
+    text-align: center;
+    max-width: 600px;
+    margin: 24px auto;
+    padding: 0 16px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .caixa-email {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 999px;
+    height: 58px;
+    padding: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+    max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .caixa-email input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #374151;
+    height: 100%;
+    font-family: inherit;
+  }
+  
+  .caixa-email input::placeholder {
+    color: #9ca3af;
+    font-weight: 400;
+  }
+  
+  .botao-start-for-free {
+    background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+    color: white;
+    padding: 0 20px;
+    border: none;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    height: 100%;
+    cursor: pointer;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+  }
+  
+  .botao-start-for-free:hover {
+    background: linear-gradient(135deg, #6d28d9 0%, #9333ea 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
+  }
+  
+
+
+
+
+
+
+}
+
+
+
+
+
+
 
 
 #video img {
@@ -355,22 +563,22 @@
 .contato-rodape {
   display: flex;
   flex-direction: column;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .contato-item {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .contato-item img {
-  width: 40px;  
-  height: 40px; 
-  margin-right: 15px; 
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
 }
 
 .contato-item p {
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 
@@ -457,7 +665,7 @@
   align-items: center;
   font-size: 0.85rem;
   color: #9ca3af;
-  
+
 }
 
 .termos-container {
@@ -465,7 +673,7 @@
   justify-content: space-between;
   font-size: 16px;
   width: 100%;
-  max-width: 500px; 
+  max-width: 500px;
   gap: 20px;
 }
 
