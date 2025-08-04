@@ -146,68 +146,136 @@ body {
     line-height: 1.6;
   }
 
+
+  /* CAIXA DE EMAIL COM BOTÃO*/
   .caixa-email {
     display: flex;
     align-items: center;
-    background: white;
-    border-radius: 999px;
-    height: 58px;
-    padding: 8px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-    border: 1px solid #e5e7eb;
-    max-width: 375px;
-    width: 100%;
-    margin: 0 auto;
+    border: 2px solid #EDEDED;
+    /* borda cinza clara */
+    border-radius: 9999px;
+    /* bordas super arredondadas */
     overflow: hidden;
+    width: fit-content;
+    background: white;
   }
-  
-  .caixa-email input {
-    flex: 1;
+
+  .caixa-email input[type="email"] {
     border: none;
+    padding: 24px 16px;
     outline: none;
-    background: transparent;
-    padding: 0 16px;
     font-size: 14px;
-    color: #374151;
-    height: 100%;
-    font-family: inherit;
+    color: var(--cor-quarta);
+    background: transparent;
   }
-  
-  .caixa-email input::placeholder {
-    color: #9ca3af;
-    font-weight: 400;
+
+  .caixa-email input[type="email"]::placeholder {
+    color: #7e8492b6;
+    font-weight:700;
+    font-size: 15px;
   }
-  
+
   .botao-start-for-free {
-    background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+    background-color: var(--cor-primaria);
     color: white;
-    padding: 0 20px;
     border: none;
-    border-radius: 999px;
-    font-size: 13px;
-    font-weight: 600;
-    height: 100%;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 14px;
     cursor: pointer;
-    white-space: nowrap;
+    border-radius: 9999px;
+    /* arredondado igual ao container */
+    height: 100%;
+    transition: background 0.2s ease-in-out;
+    margin-right: 12px;
+  }
+
+  .botao-start-for-free:hover {
+    background-color: #4a23cc;
+    /* roxo escuro no hover */
+  }
+
+
+  /* 3 IMAGENS */
+  .imagens-graficos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  /* Coluna da esquerda com 2 imagens empilhadas */
+  .coluna-esquerda {
+    display: flex;
+    flex-direction: column;
+    width: 125%;
+  }
+
+  /* Coluna da direita com 1 imagem */
+  .coluna-direita {
+    width: 155%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.2s ease;
   }
-  
-  .botao-start-for-free:hover {
-    background: linear-gradient(135deg, #6d28d9 0%, #9333ea 100%);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
+
+  /* Estilo das imagens */
+  .imagens-graficos img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    right: 100px;
   }
-  
+
+
+  /* TEXTO 1300+ BIG... E MARCA DAS EMPRESAS */
+
+  .texto-bigbrands {
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+    font-size: 33px;
+  }
+
+  .imagem-empresas {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .imagem-empresa-centro {
+    width: 170px;
+    height: auto;
+  }
+
+  .texto-decoracao-esquerda {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: var(--cor-segundaria);
+    color: var(--cor-primaria);
+    border-radius: 10000px;
+    font-weight: 400;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(88, 40, 227, 0.05);
+    text-align: start;
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+
+  .texto-decoracao-esquerda h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .texto-the-only-card {
+    font-size: 20px;
+  }
 
 
 
 
 
 
-}
 
 
 
@@ -216,10 +284,6 @@ body {
 
 
 
-#video img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
 }
 
 #imagem-task-progress img {
@@ -293,8 +357,20 @@ body {
 }
 
 .feature a:hover span {
-  transform: translateX(2px);
+  transform: traslateX(2px);
 }
+
+#video {
+  text-align: center; /* forma simples de centralizar elementos inline/inline-block */
+}
+
+#video img {
+  width: 95%;
+  max-width: 400px;
+  height: auto;
+  display: inline-block; /* necessário para funcionar bem com text-align */
+}
+
 
 
 /* Cartões de preço estilo pricing */
@@ -409,7 +485,7 @@ body {
   flex: 1;
 }
 
-.botao-comece {
+.texto decora-comece {
   margin-top: 16px;
   padding: 12px 0;
   background: var(--cor-primaria);
@@ -424,11 +500,11 @@ body {
   transition: background-color 0.2s ease;
 }
 
-.botao-comece:hover {
+.texto decora-comece:hover {
   background: #4c1d95;
 }
 
-.botao-comece:focus-visible {
+.texto decora-comece:focus-visible {
   outline: 2px solid rgba(88, 40, 227, 0.5);
   outline-offset: 2px;
 }
@@ -497,7 +573,7 @@ body {
 
 /* ABAIXO DO CARD */
 
-.botao-View-More-Reviews {
+.texto decora-View-More-Reviews {
   margin-top: 16px;
   padding: 1px 2px;
   background: var(--cor-primaria);
@@ -512,7 +588,7 @@ body {
   transition: background-color 0.2s ease;
 }
 
-.botao-View-More-Reviews a {
+.texto decora-View-More-Reviews a {
   text-decoration: none;
   color: white;
 }
@@ -521,7 +597,7 @@ body {
   background: #4c1d95;
 }
 
-.botao-View-More-Reviews:focus-visible {
+.texto-decoradoView-More-Reviews:focus-visible {
   outline: 2px solid rgba(88, 40, 227, 0.5);
   outline-offset: 2px;
 }
