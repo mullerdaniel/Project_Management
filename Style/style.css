@@ -30,7 +30,7 @@ body {
     z-index: -1;
   }
 
-  /* HEADER DESKTOP */
+  /* HEADER DESKTOP - escondido no mobile */
   #header-desktop {
     display: none;
   }
@@ -44,6 +44,7 @@ body {
     background-color: white;
   }
 
+  /* Logo do header */
   .titulo {
     display: flex;
     align-items: center;
@@ -62,6 +63,7 @@ body {
     margin: 0;
   }
 
+  /* Menu hamburguer */
   .humburguer {
     display: flex;
     align-items: center;
@@ -86,6 +88,7 @@ body {
     padding: 40px 16px;
   }
 
+  /* Badge decorativo */
   .texto-decoracao {
     display: block;
     width: fit-content;
@@ -105,6 +108,7 @@ body {
     padding: 0;
   }
 
+  /* Título principal */
   .texto {
     display: flex;
     flex-direction: column;
@@ -346,16 +350,94 @@ body {
     display: inline-block;
   }
 
-  /* BOTÃO START PROJECT */
+  /* SEÇÃO PROJETO */
+  .project-section {
+    padding: 40px 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .texto-decoracao-esquerda {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: var(--cor-segundaria);
+    color: var(--cor-primaria);
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .texto-decoracao-esquerda h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .texto {
+    margin: 20px 0;
+  }
+
+  .texto h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-terciaria);
+    margin: 0;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .subtexto-esquerda {
+    margin: 20px 0 40px 0;
+  }
+
+  .subtexto-esquerda p {
+    color: var(--cor-quarta);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    text-align: left;
+  }
+
   .botao-start-project {
-    /* Adicione estilos aqui se necessário */
+    margin-bottom: 40px;
+  }
+
+  .botao-start-project a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--cor-primaria);
+    color: white;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .botao-start-project a:hover {
+    background: var(--cor-primaria);
+  }
+
+  .botao-start-project h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
   }
 
   /* IMAGEM TASK PROGRESS */
+  #imagem-task-progress {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+  }
+
   #imagem-task-progress img {
     width: 100%;
-    max-width: 200px;
+    max-width: 343px;
     height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   }
 
   /* PLANOS DE PREÇO */
@@ -507,6 +589,31 @@ body {
     padding: 60px 20px;
   }
 
+  .container-fundo-roxo .img {
+    text-align: center;
+    padding: 0 16px;
+    margin-bottom: 20px;
+  }
+
+  .container-fundo-roxo .img h2 {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .container-fundo-roxo .subimg {
+    text-align: center;
+    padding: 0 16px;
+    margin-bottom: 40px;
+  }
+
+  .container-fundo-roxo .subimg p {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+    color: var(--cor-quarta);
+  }
+
   /* CARTÃO ROXO */
   .cartao-roxo {
     display: flex;
@@ -535,21 +642,164 @@ body {
     margin-right: auto;
   }
 
-  /* BOTÃO VIEW MORE REVIEWS */
-  .botao-View-More-Reviews {}
+  /* CONTAINER DE DEPOIMENTOS */
+  .testimonials-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
 
-  /* CARTÃO COMENTÁRIOS */
-  .cartao-comentarios {}
+  /* Badge decorativo "Our clients knows..." */
+  .img-decoracao-esquerda {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: var(--cor-segundaria);
+    color: var(--cor-primaria);
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin: 100px 0 20px 16px;
+    box-shadow: 0 0 10px rgba(88, 40, 227, 0.05);
+  }
 
-  .imagem-perfil {}
+  .img-decoracao-esquerda h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+  }
 
-  .nome-pessoa {}
+  /* Subtexto abaixo do badge */
+  .subimg {
+    padding: 0 16px;
+    margin-bottom: 30px;
+  }
 
-  .funcao {}
+  .subimg p {
+    color: var(--cor-quarta);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    text-align: left;
+  }
 
-  .comentario {}
+  /* Botão "View More Reviews" */
+  .botao-View-More-Reviews {
+    padding: 0 16px;
+    margin-bottom: 40px;
+  }
 
-  .estrelas {}
+  .botao-View-More-Reviews a {
+    display: inline-block;
+    background: var(--cor-primaria);
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+  }
+
+  .botao-View-More-Reviews h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  /* Cartões de comentários */
+  .cartao-comentarios {
+    background: #FAFBFA;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 16px 20px 16px;
+    display: grid;
+    grid-template-areas:
+      "foto nome"
+      "foto funcao"
+      "comentario comentario"
+      "estrelas estrelas";
+    grid-template-columns: 48px 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 8px 12px;
+    align-items: start;
+  }
+
+  /* Imagem de perfil */
+  .cartao-comentarios .imagem-perfil {
+    grid-area: foto;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .cartao-comentarios .imagem-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Nome da pessoa */
+  .cartao-comentarios .nome-pessoa {
+    grid-area: nome;
+    margin: 0;
+    align-self: end;
+  }
+
+  .cartao-comentarios .nome-pessoa h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  /* Função da pessoa */
+  .cartao-comentarios .funcao {
+    grid-area: funcao;
+    margin: 0;
+    align-self: start;
+  }
+
+  .cartao-comentarios .funcao h4 {
+    font-size: 0.85rem;
+    color: var(--cor-quarta);
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  /* Texto do comentário */
+  .cartao-comentarios .comentario {
+    grid-area: comentario;
+    margin: 12px 0 16px 0;
+  }
+
+  .cartao-comentarios .comentario p {
+    color: var(--cor-terciaria);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* Avaliação com estrelas */
+  .cartao-comentarios .estrelas {
+    grid-area: estrelas;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .cartao-comentarios .estrelas img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .cartao-comentarios .estrelas h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    margin: 0;
+    margin-left: 8px;
+  }
 
   /* FOOTER MOBILE */
   .rodape-mobile {
