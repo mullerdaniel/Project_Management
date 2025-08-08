@@ -8,7 +8,7 @@ Replicar um protótipo do figma no HTML e CSS
 * Fazer um codigo limpo (clean code)
 * Usar variaveis
 
-* Contar um pouco sobre este projeto:
+* Sobre o projeto:
 - Para oque o site pode ser usado.
 - Um mini tutorial de como utilizar o vscode.
 - Meu nome.
