@@ -47,6 +47,8 @@ body {
     display: none;
   }
 
+
+
   /* HEADER MOBILE */
   #header-mobile {
     display: flex;
@@ -64,12 +66,14 @@ body {
   }
 
   .titulo img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
+    margin-left: -10px;
   }
 
+  /* Titulo ("logo") coca */
   .titulo h1 {
-    font-size: 2.2rem;
+    font-size: 32px;
     font-weight: bold;
     color: var(--cor-primaria);
     margin: 0;
@@ -84,8 +88,8 @@ body {
   }
 
   .humburguer img {
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
   }
 
   /* Título principal */
@@ -93,19 +97,20 @@ body {
     display: block;
     width: fit-content;
     margin: 20px auto;
-    padding: 6px 16px;
+    padding: 6px 0px;
     background-color: var(--cor-segundaria);
     color: var(--cor-primaria);
     border-radius: 10000px;
-    font-weight: 400;
-    font-size: 1rem;
+    font-size: 13px;
     box-shadow: 0 0 10px rgba(88, 40, 227, 0.05);
     text-align: center;
+    margin-top: -2px;
   }
 
   .img-decoracao h3 {
     margin: 0;
-    padding: 0;
+    padding: 5px 15px;
+    font-weight: 600;
   }
 
   .img {
@@ -1316,30 +1321,22 @@ body {
 
 
   /* IMAGENS DOS GRÁFICOS */
-  /* Container geral */
-  .graficos-desktop-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: #fff;
-  }
 
-  /* Grade para alinhamento perfeito */
   .grade-graficos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: nowrap;
     gap: 20px;
-    width: 1440px;
+    justify-content: center;
   }
 
-  /* Imagens sempre proporcionais e alinhadas */
   .grade-graficos img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-    /* se o design tiver cantos arredondados */
+    height: 230px;
+    width: auto;
+    max-width: 180px;
   }
+
+
+
 
 
 
