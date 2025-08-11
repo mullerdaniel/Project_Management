@@ -127,16 +127,10 @@ body {
 
   .img-roxo {
     color: var(--cor-primaria);
+    margin-top: 500px;
   }
 
-  .subtexto p {
-    color: var(--cor-cinza);
-    font-size: 20px;
-    line-height: 1.6;
-    max-width: 700px;
-    margin: 30px auto 50px;
-  }
-
+ 
 
   /* SEÇÃO TÍTULO CENTRALIZADO */
   .bloco-titulo-centralizado {
@@ -208,6 +202,10 @@ body {
     padding: 0 16px;
     font-size: 1rem;
     line-height: 1.6;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 90%;
+    text-align: left;
   }
 
   .subtexto h3 {
@@ -240,7 +238,7 @@ body {
 
   .caixa-email input[type="email"] {
     border: none;
-    padding: 24px 16px;
+    padding: 24px 14px;
     outline: none;
     font-size: 14px;
     color: var(--cor-quarta);
@@ -301,10 +299,10 @@ body {
 
   /* TEXTO BIG BRANDS E EMPRESAS */
   .texto-bigbrands {
-    margin-top: 150px;
-    width: 100%;
+    margin-top: 120px;
+    width: 92%;
     text-align: center;
-    font-size: 33px;
+    font-size: 30px;
   }
 
   .imagem-empresas {
@@ -319,16 +317,16 @@ body {
   }
 
   /* TEXTO DECORAÇÃO ESQUERDA */
-  .texto-decoracao-esquerda {
+
+   .texto-decoracao-esquerda {
     display: inline-block;
-    padding: 6px 16px;
+    padding: 8px 16px;
     background-color: var(--cor-segundaria);
     color: var(--cor-primaria);
-    border-radius: 10000px;
-    font-weight: 400;
-    font-size: 1rem;
-    box-shadow: 0 0 10px rgba(88, 40, 227, 0.05);
-    text-align: start;
+    border-radius: 999px;
+    font-weight: 100;
+    font-size: 12px;
+    margin-bottom: 20px;
     margin-top: 100px;
     margin-left: 10px;
   }
@@ -344,7 +342,9 @@ body {
 
   .texto-padrao-esquerda h2 {
     margin-left: 12px;
-    font-size: 25px;
+    font-size: 28px;
+    margin-top: -5px;
+    color: black;
   }
 
   .texto-padrao-esquerda p {
@@ -356,6 +356,7 @@ body {
   .highlight-wrapper {
     position: relative;
     padding-left: 1.5rem;
+    margin-top: 45px;
   }
 
   .highlight-wrapper::before {
@@ -429,33 +430,19 @@ body {
     box-sizing: border-box;
   }
 
-  .texto-decoracao-esquerda {
-    display: inline-block;
-    padding: 6px 16px;
-    background-color: var(--cor-segundaria);
-    color: var(--cor-primaria);
-    border-radius: 50px;
-    font-weight: 500;
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-
-  .texto-decoracao-esquerda h3 {
-    margin: 0;
-    padding: 0;
-  }
-
   .texto {
     margin: 20px 0;
   }
 
   .texto h2 {
-    font-size: 2rem;
+    font-size: 30px;
     font-weight: 700;
-    color: var(--cor-terciaria);
+    color: black;
     margin: 0;
     line-height: 1.2;
     text-align: left;
+    margin-top: -20px;
+    margin-left: 18px;
   }
 
   .subtexto-esquerda {
@@ -513,6 +500,23 @@ body {
   }
 
   /* PLANOS DE PREÇO */
+.texto-cards h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    margin-left: 10px;
+    margin-top: -5px;
+    width: 80%;
+  }
+
+  .subtexto-cards p {
+    font-size: 16px;
+    color: var(--cor-quarta);
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: 40px;
+  }
+
   .planos-wrapper {
     display: flex;
     flex-direction: column;
@@ -531,7 +535,6 @@ body {
     background: #ffffff;
     border-radius: 12px;
     padding: 32px 24px;
-    border: 1px solid #e5e7eb;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -671,6 +674,9 @@ body {
     text-align: center;
     margin: 0 auto;
     max-width: 600px;
+    color: black;
+    font-size: 30px;
+    width: 99%;
   }
 
   .container-fundo-roxo .subimg {
@@ -679,7 +685,7 @@ body {
     margin-bottom: 40px;
   }
 
-  .container-fundo-roxo .subimg p {
+  .container-fundo-roxo {
     text-align: center;
     margin: 0 auto;
     max-width: 500px;
@@ -690,14 +696,18 @@ body {
   .cartao-roxo {
     display: flex;
     flex-direction: column;
-    padding: 60px 40px;
+    padding: 10px 40px;
     background-color: var(--cor-primaria);
     color: white;
     border-radius: 8px;
-    width: 95%;
+    width: 100%;
     min-height: 400px;
     box-sizing: border-box;
     text-align: center;
+  }
+
+  .img h1 {
+    font-size: 55px;
   }
 
   .linha {
@@ -751,6 +761,9 @@ body {
     line-height: 1.6;
     margin: 0;
     text-align: left;
+    margin-left: -2px;
+    width: 110%;
+    margin-bottom: -70px;
   }
 
   /* Botão "View More Reviews" */
@@ -779,7 +792,7 @@ body {
   .cartao-comentarios {
     background: #FAFBFA;
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px 20px;
     margin: 0 16px 20px 16px;
     display: grid;
     grid-template-areas:
@@ -1507,12 +1520,9 @@ body {
   .feature a span {
     display: inline-block;
     margin-left: 4px;
-    transition: transform 0.2s ease;
   }
 
-  .feature a:hover span {
-    transform: translateX(2px);
-  }
+
 
   #video {
     flex-shrink: 0;
@@ -1704,7 +1714,6 @@ body {
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
     padding: 70px 30px;
     width: 320px;
-    transition: transform 0.3s;
     margin-top: 250px;
     margin-bottom: 120px;
   }
