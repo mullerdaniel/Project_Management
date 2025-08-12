@@ -196,10 +196,8 @@ body {
     padding: 12px 24px;
     font-weight: bold;
     font-size: 14px;
-    cursor: pointer;
     border-radius: 9999px;
     height: 100%;
-    transition: background 0.2s ease-in-out;
     margin-right: 12px;
   }
 
@@ -572,14 +570,8 @@ body {
     color: white;
     font-size: 14px;
     font-weight: 600;
-    cursor: pointer;
     width: 100%;
     text-align: center;
-    transition: background-color 0.2s ease;
-  }
-
-  .botao-comece:hover {
-    background: #4c1d95;
   }
 
   .botao-comece:focus-visible {
@@ -1125,10 +1117,6 @@ body {
     margin-top: 2px;
   }
 
-  #botao-start-for-free-header button:hover {
-    opacity: 0.85;
-  }
-
   /* SEÇÃO TÍTULO CENTRALIZADO DESKTOP */
   .bloco-titulo-centralizado {
     position: relative;
@@ -1244,7 +1232,6 @@ body {
     padding: 18px 28px;
     font-weight: bold;
     font-size: 16px;
-    cursor: pointer;
     border-radius: 9999px;
     transition: all 0.2s ease-in-out;
     margin: 8px;
@@ -1653,10 +1640,6 @@ body {
     margin-top: 50px;
   }
 
-  .botao-comece:hover {
-    background-color: #675ef2;
-  }
-
   /* CONTAINER FUNDO ROXO DESKTOP */
   .container-fundo-roxo {
     background-color: var(--cor-segundaria);
@@ -2017,12 +2000,6 @@ body {
 
   .termos-rodape {
     font-size: 15px;
-    color: white;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-
-  .termos-rodape:hover {
     color: white;
   }
 
