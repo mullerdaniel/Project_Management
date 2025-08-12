@@ -15,7 +15,13 @@ body {
   /* BLUR AZUL */
 }
 
-/* VERSÃO MOBILE */
+
+
+/*===================================================================================================*/
+/*---------------------------I N I C I O = D O = M O B I L E-----------------------------------------*/
+/*===================================================================================================*/
+
+
 @media (max-width: 768px) {
 
   /* BLUR EFFECTS */
@@ -998,6 +1004,9 @@ body {
   }
 }
 
+/*===================================================================================================*/
+/*---------------------------------F I M = D O = M O B I L E-----------------------------------------*/
+/*===================================================================================================*/
 
 
 
@@ -1005,40 +1014,16 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*===================================================================================================*/
+/*-------------------------------------I N I C I O = D O = D E K S T O P-----------------------------*/
+/*===================================================================================================*/
 
 
 
 
 @media (min-width: 769px) {
 
+  /* ELEMENTOS OCULTOS NO DESKTOP */
   .imagens-graficos-mobile {
     display: none;
   }
@@ -1055,18 +1040,7 @@ body {
     display: none;
   }
 
-
-
-  #header-desktop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 40px;
-    background-color: white;
-    font-family: sans-serif;
-  }
-
-  /* BLUR ROXO */
+  /* BLUR EFFECTS DESKTOP */
   .blur-roxo {
     position: absolute;
     top: 170px;
@@ -1081,7 +1055,6 @@ body {
     margin-left: -160px;
   }
 
-  /* BLUR AZUL */
   .blur-azul {
     position: absolute;
     top: 350px;
@@ -1096,30 +1069,16 @@ body {
     margin-left: -160px;
   }
 
-
-
-  #botao-home {
-    color: var(--cor-primaria)
+  /* HEADER DESKTOP */
+  #header-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    background-color: white;
+    font-family: sans-serif;
   }
 
-  /* Botão "Start For Free" */
-  #botao-start-for-free-header button {
-    text-decoration: none;
-    background-color: var(--cor-primaria);
-    color: white;
-    padding: 20px 40px;
-    border-radius: 999px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    border: none;
-    margin-top: 2px;
-  }
-
-  #botao-start-for-free-header button:hover {
-    opacity: 0.85;
-  }
-
-  /* Logo + texto */
   .titulo {
     display: flex;
     align-items: center;
@@ -1139,7 +1098,6 @@ body {
     margin: 0;
   }
 
-  /* Navegação */
   .botoes-header {
     display: flex;
     gap: 30px;
@@ -1151,24 +1109,27 @@ body {
     font-weight: 500;
   }
 
-  /* Botão "Start For Free" */
-  #botao-start-for-free a {
+  #botao-home {
+    color: var(--cor-primaria)
+  }
+
+  #botao-start-for-free-header button {
     text-decoration: none;
     background-color: var(--cor-primaria);
     color: white;
-    padding: 10px 24px;
+    padding: 20px 40px;
     border-radius: 999px;
     font-weight: 600;
     font-size: 0.95rem;
-
+    border: none;
+    margin-top: 2px;
   }
 
-  #botao-start-for-free a:hover {
+  #botao-start-for-free-header button:hover {
     opacity: 0.85;
   }
 
-
-  /* SEÇÃO TÍTULO CENTRALIZADO */
+  /* SEÇÃO TÍTULO CENTRALIZADO DESKTOP */
   .bloco-titulo-centralizado {
     position: relative;
     overflow: hidden;
@@ -1180,8 +1141,6 @@ body {
     padding: 40px 16px;
   }
 
-
-  /* Título principal */
   .img-decoracao {
     display: block;
     width: fit-content;
@@ -1200,17 +1159,6 @@ body {
     padding: 0;
   }
 
-  .img .img-roxo {
-    font-size: 76px;
-  }
-
-
-  .texto h3 {
-    font-size: 6rem;
-    font-weight: 600;
-    margin: 0;
-  }
-
   .img h3 {
     font-size: 76px;
     width: 95%;
@@ -1225,7 +1173,7 @@ body {
     margin-left: 20px;
   }
 
-  /* SUBTEXTO */
+  /* SUBTEXTO DESKTOP */
   .subtexto {
     display: flex;
     justify-content: center;
@@ -1257,7 +1205,7 @@ body {
     line-height: 1.6;
   }
 
-  /* CAIXA DE EMAIL COM BOTAO*/
+  /* CAIXA DE EMAIL COM BOTÃO DESKTOP */
   .caixa-email {
     display: flex;
     align-items: center;
@@ -1307,21 +1255,7 @@ body {
     background-color: var(--cor-primaria);
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* IMAGENS DOS GRÁFICOS */
-
+  /* IMAGENS DOS GRÁFICOS DESKTOP */
   .grade-graficos {
     display: flex;
     flex-wrap: nowrap;
@@ -1335,32 +1269,7 @@ body {
     max-width: 180px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* TEXTO BIG BRANDS E EMPRESAS */
+  /* TEXTO BIG BRANDS E EMPRESAS DESKTOP */
   .texto-bigbrands {
     margin-top: 160px;
     width: 100%;
@@ -1390,26 +1299,12 @@ body {
     object-fit: contain;
   }
 
-
-
   .imagem-empresa-centro {
     display: block;
     margin: 0 auto;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  /* SEÇÃO FEATURES DESKTOP */
   section {
     display: flex;
     align-items: flex-start;
@@ -1430,15 +1325,11 @@ body {
     border-radius: 50px;
     font-weight: 500;
     font-size: 13px;
-  }
-
-  .texto-decoracao-esquerda h3 {
     color: var(--cor-primaria);
     font-weight: 600;
     font-size: 18px;
     margin-left: 50px;
     margin-top: -350px;
-
   }
 
   .texto-padrao-esquerda h2 {
@@ -1481,7 +1372,6 @@ body {
     z-index: 0;
   }
 
-
   .feature {
     margin-bottom: 40px;
   }
@@ -1517,8 +1407,7 @@ body {
     margin-left: 4px;
   }
 
-
-
+  /* VÍDEO DESKTOP */
   #video {
     flex-shrink: 0;
     margin-top: 390px;
@@ -1531,22 +1420,7 @@ body {
     border-radius: 12px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  /* SEÇÃO PROJETO DESKTOP */
   .imagem-task-desktop section {
     max-width: 1440px;
     margin: 0 auto;
@@ -1617,7 +1491,6 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
-
   }
 
   .botao-start-project a::after {
@@ -1631,9 +1504,9 @@ body {
     font-size: 20px;
     font-weight: 100;
     margin: 0;
-
   }
 
+  /* IMAGEM TASK PROGRESS DESKTOP */
   #imagem-task-progress {
     position: relative;
     max-width: 600px;
@@ -1651,24 +1524,7 @@ body {
     margin-left: 70px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  /* PLANOS DE PREÇO DESKTOP */
   .container {
     width: 1440px;
     display: flex;
@@ -1676,7 +1532,6 @@ body {
     align-items: center;
   }
 
-  /* LADO ESQUERDO */
   .lado-esquerdo {
     max-width: 450px;
   }
@@ -1698,13 +1553,11 @@ body {
     margin-top: -20px;
   }
 
-  /* LADO DIREITO */
   .planos-wrapper {
     display: flex;
     gap: 30px;
   }
 
-  /* CARTÕES DE PLANO */
   .cartao-plano {
     background-color: #ffffff;
     border-radius: 16px;
@@ -1804,17 +1657,7 @@ body {
     background-color: #675ef2;
   }
 
-
-
-
-
-
-
-
-
-
-
-  /* CONTAINER FUNDO ROXO */
+  /* CONTAINER FUNDO ROXO DESKTOP */
   .container-fundo-roxo {
     background-color: var(--cor-segundaria);
     padding: 40px 0;
@@ -1855,25 +1698,7 @@ body {
     color: var(--cor-quarta);
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* CARTÃO ROXO */
+  /* CARTÃO ROXO DESKTOP */
   .container-centralizado {
     display: flex;
     justify-content: center;
@@ -1931,40 +1756,7 @@ body {
     margin-top: -18px;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .texto .texto-our-clients {
-    margin-top: -20px;
-    font-size: 40px;
-    margin-left: 10px;
-  }
-
-  .texto-decoracao-esquerda .texto-our-customer {
-    margin-left: -80px;
-    margin-top: 100px;
-    text-align: left;
-  }
-
-  .subtexto .subtexto-we-take {
-    margin-left: -35px;
-    text-align: left;
-    font-size: 20px;
-  }
-
+  /* CONTAINER DE DEPOIMENTOS DESKTOP */
   .testimonials-container {
     padding: 80px 120px;
     display: grid;
@@ -2018,8 +1810,23 @@ body {
     max-width: 320px;
   }
 
+  .texto .texto-our-clients {
+    margin-top: -20px;
+    font-size: 40px;
+    margin-left: 10px;
+  }
 
+  .texto-decoracao-esquerda .texto-our-customer {
+    margin-left: -80px;
+    margin-top: 100px;
+    text-align: left;
+  }
 
+  .subtexto .subtexto-we-take {
+    margin-left: -35px;
+    text-align: left;
+    font-size: 20px;
+  }
 
   .botao-View-More-Reviews {
     grid-column: 3;
@@ -2045,6 +1852,7 @@ body {
     font-weight: 600;
   }
 
+  /* CARTÕES DE COMENTÁRIOS DESKTOP */
   .cartao-comentarios {
     background: #FAFBFA;
     border-radius: 12px;
@@ -2139,24 +1947,7 @@ body {
     color: var(--cor-terciaria);
     margin: 0;
     margin-left: 6px;
-
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   /* FOOTER DESKTOP */
   .rodape-desktop {
@@ -2242,3 +2033,8 @@ body {
     text-align: left;
   }
 }
+
+
+/*===================================================================================================*/
+/*-------------------------------------------F I M = D O = D E K S T O P-----------------------------*/
+/*===================================================================================================*/
