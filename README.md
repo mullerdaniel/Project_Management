@@ -28,33 +28,33 @@ site de teclogia.
 
 -----------------------------------------------------------------------------------------------
 
-* PASO 1:
+* PASSO 1:
 
 - CRIAÇÃO HTML MOBILE FIRST.
 
 
-* PASO 2:
+* PASSO 2:
 
 - AJEITAR HTML TANTO PARA DESKTOP QUANTO PARA MOBILE.
 
 
-* PASO 3:
+* PASSO 3:
 
 - CRIAÇÃO CSS.
 
 
-* PASO 4:
+* PASSO 4:
 
 - Verificar se o site está identico ao projeto do figma.
 - Verificar as cores e os posicionamentos dos itens.
 
 
-* PASO 5:
+* PASSO 5:
 
 - Deixar o site responsivo de uma forma que ele não quebre com diferentes resoluções.
 
 
-* PASO 6:
+* PASSO 6:
 
 - Fazer uma verificação final do site para entrega.
 
